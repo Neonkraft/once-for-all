@@ -68,11 +68,11 @@ class EvolutionFinder:
         if not constraint_type in self.valid_constraint_range.keys():
             self.invite_reset_constraint_type()
         self.efficiency_constraint = efficiency_constraint
-        if not (
-            efficiency_constraint <= self.valid_constraint_range[constraint_type][1]
-            and efficiency_constraint >= self.valid_constraint_range[constraint_type][0]
-        ):
-            self.invite_reset_constraint()
+        # if not (
+        #     efficiency_constraint <= self.valid_constraint_range[constraint_type][1]
+        #     and efficiency_constraint >= self.valid_constraint_range[constraint_type][0]
+        # ):
+        #     self.invite_reset_constraint()
 
         self.efficiency_predictor = efficiency_predictor
         self.accuracy_predictor = accuracy_predictor
